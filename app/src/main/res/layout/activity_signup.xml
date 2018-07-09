@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pmg"
+    tools:context="uk.ac.cityofglasgowcollege.assessement3_pmg.SignupActivity">
+
+    <LinearLayout
+        android:id="@+id/images_top"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/TestView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PLEASE ENTER YOUR DETALS"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <EditText
+            android:id="@+id/firstname_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColorHint="@color/light_grey"
+            android:paddingLeft="5dp"
+            android:ems="10"
+            android:hint="first name"
+            android:inputType="textPersonName"
+            android:textColor="@color/pmg" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/lastname_Txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColorHint="@color/light_grey"
+            android:paddingLeft="5dp"
+            android:ems="10"
+            android:hint="last name"
+            android:inputType="textPersonName"
+            android:textColor="@color/pmg" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/email_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColorHint="@color/light_grey"
+            android:paddingLeft="5dp"
+            android:ems="10"
+            android:hint="email address"
+            android:inputType="textPersonName"
+            android:textColor="@color/pmg" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/username_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColorHint="@color/light_grey"
+            android:paddingLeft="5dp"
+            android:ems="10"
+            android:hint="username"
+            android:inputType="textPersonName"
+            android:textColor="@color/pmg" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/password_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp"
+            android:textColor="@color/pmg"
+            android:textColorHint="@color/light_grey" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/reenterpassword_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="re-enter password"
+            android:inputType="textPersonName|textPassword"
+            android:paddingLeft="5dp"
+            android:textColor="@color/pmg"
+            android:textColorHint="@color/light_grey" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="onSignupClick"
+        android:text="Sign up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>
